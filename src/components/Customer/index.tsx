@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { CustomerProps } from '../../types/types.def'
 
 

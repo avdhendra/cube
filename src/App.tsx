@@ -19,7 +19,7 @@ function App() {
 
   const getCustomers = async () => {
     try {
-      const response = await fetch('https://dummyjson.com/users')
+      const response = await fetch(import.meta.env.VITE_USER_API)
       const data = await response.json()
       //  console.log("customer",data.users)
       const updatedUser = data.users.map((item: any) => ({
@@ -37,7 +37,7 @@ function App() {
   }
   const getImages = async () => {
     try {
-      const response = await fetch("https://fakestoreapi.com/products")
+      const response = await fetch(import.meta.env.VITE_IMAGE_API)
       const data = await response.json()
 
       const updatedProduct = data.map((item: any) => ({
