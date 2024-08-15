@@ -19,6 +19,7 @@ npm install
 npm run dev
 
 ```
+- add .env file
 - .env file variables
 ```
 VITE_USER_API=https://dummyjson.com/users
